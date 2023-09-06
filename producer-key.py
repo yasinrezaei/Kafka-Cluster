@@ -6,7 +6,7 @@ producer = KafkaProducer(bootstrap_servers=['localhost:9092'], value_serializer=
                         key_serializer=str.encode )
 
 for e in range(1000):
- data = {'users' : e}
- producer.send('users', value=data, key= str(e))
- print(f"Sending data : {data}")
- sleep(1)
+    data = {'users' : e}
+    producer.send('organizations_topic', value=data, key= str(e))
+    print(f"Sending data : {data}")
+    sleep(1)
