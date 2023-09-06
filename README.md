@@ -42,31 +42,5 @@ Open source distributed event streaming platform
 - zookeeper
 
 
----
-
-Each consumer -> one broker 
-
----
-
-### 3 partitions 
-
-Topic A:
-
-- Part1 
-
-- Part2
-
-- Part3
-
-
-### Kafka cluster(Rep-Fac = 2,L = leader , F = follower) 
-
-BROKER 1 : (L)Part 3 - (F)Part 1
-
-
-BROKER 2 : (L)Part 1 - (F)Part 2
-
-
-BROKER 3 : (L)Part 2 - (F)Part 3
 
 
